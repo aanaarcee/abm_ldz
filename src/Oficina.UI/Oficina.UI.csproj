@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>RegistrosOficina</AssemblyName>
+    <RootNamespace>Oficina.UI</RootNamespace>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Oficina.Entidades\Oficina.Entidades.csproj" />
+    <ProjectReference Include="..\Oficina.Negocio\Oficina.Negocio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="conexion.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

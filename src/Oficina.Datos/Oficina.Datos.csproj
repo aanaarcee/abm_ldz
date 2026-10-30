@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.7" />
+    <!-- SqlClient 6.1.7 trae Pkcs 9.0.11, que tiene vulnerabilidades publicadas -->
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.14" />
+  </ItemGroup>
+
+  <!-- El script de la base va dentro del programa: si la base no existe, la aplicación la crea -->
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\sql\OficinaRegistros.sql" LogicalName="OficinaRegistros.sql" Link="sql\OficinaRegistros.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Oficina.Entidades\Oficina.Entidades.csproj" />
+  </ItemGroup>
+
+</Project>
+

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Oficina.Entidades\Oficina.Entidades.csproj" />
+    <ProjectReference Include="..\Oficina.Datos\Oficina.Datos.csproj" />
+  </ItemGroup>
+
+</Project>

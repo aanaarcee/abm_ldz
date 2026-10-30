@@ -1,0 +1,11 @@
+# Compilación y Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.rsuser
+TestResults/
+
+# Configuración local (cada uno con su cadena de conexión)
+*.local.json
